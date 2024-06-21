@@ -61,7 +61,7 @@ export function ExpenseTable({ expenses, type, budgets }) {
                   <TableCell>
                     <Button
                       variant="outline"
-                      className=" hover:bg-violet-100 hover:text-stone-600 text-sm font-normal bg-violet-200"
+                      className=" hover:bg-violet-100 hover:text-stone-600 text-xs font-normal bg-violet-200"
                       disabled={isSubmitting}
                     >
                       {budgets
@@ -83,7 +83,7 @@ export function ExpenseTable({ expenses, type, budgets }) {
                     <input type="hidden" name="id" value={expense.id} />
                     <Button
                       variant="outline"
-                      className="  hover:bg-red-100 hover:text-stone-600 text-sm font-normal bg-red-200"
+                      className="  hover:bg-red-100 hover:text-stone-600 text-xs font-normal bg-red-200"
                       type="submit"
                       disabled={isSubmitting}
                     >

@@ -86,7 +86,11 @@ function Dashboard() {
         <hr className=" sm:w-[30%] w-[50%] border-4 border-violet-600 rounded-md" />
       </div>
 
-      <div className=" md:grid md:grid-cols-2 md:gap-x-8 md:mx-5">
+      <div
+        className={` md:grid ${
+          budgets?.length > 0 && "md:grid-cols-2"
+        } md:gap-x-8 md:mx-5`}
+      >
         <CreateBudgetForm />
 
         {budgets?.length > 0 && <AddExpenseForm budgets={budgets} />}
@@ -96,7 +100,7 @@ function Dashboard() {
         <p className="ml-5 text-lg font-semibold mt-5">Existing Budgets</p>
       )}
 
-      <div className="grid sm:grid-cols-2 gap-8 grid-col-1 mt-5 mx-5">
+      <div className="grid sm:grid-cols-2 gap-8 grid-col-1 mt-5 md:mx-5">
         {budgets?.length > 0 &&
           expenses?.length > 0 &&
           budgets?.map((budget) => (
