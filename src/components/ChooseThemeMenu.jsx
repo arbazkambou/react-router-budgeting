@@ -23,7 +23,7 @@ export function ChooseThemeMenu() {
     [position, setTheme]
   );
   return (
-    <div className=" fixed bottom-2 left-2">
+    <div className=" fixed bottom-2 right-2 z-10">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button>
