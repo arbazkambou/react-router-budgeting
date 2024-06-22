@@ -23,7 +23,7 @@ export function ExpenseTable({ expenses, type, budgets }) {
       )}
       {type === "specific" && (
         <h1 className="mb-2 ml-5 text-lg font-semibold">
-          <span className=" text-violet-600">{budgets[0].name}</span> Expenses
+          <span className=" text-green-500">{budgets[0].name}</span> Expenses
         </h1>
       )}
       {type === "full" && (
@@ -59,11 +59,7 @@ export function ExpenseTable({ expenses, type, budgets }) {
 
                 {type !== "specific" && (
                   <TableCell>
-                    <Button
-                      variant="outline"
-                      className=" hover:bg-violet-100 hover:text-stone-600 text-xs font-normal bg-violet-200"
-                      disabled={isSubmitting}
-                    >
+                    <Button disabled={isSubmitting}>
                       {budgets
                         .filter((budget) => budget.id === expense.budgetId)
                         .map((budget) => (
@@ -82,8 +78,7 @@ export function ExpenseTable({ expenses, type, budgets }) {
                     <input type="hidden" name="name" value={expense.name} />
                     <input type="hidden" name="id" value={expense.id} />
                     <Button
-                      variant="outline"
-                      className="  hover:bg-red-100 hover:text-stone-600 text-xs font-normal bg-red-200"
+                      variant="destructive"
                       type="submit"
                       disabled={isSubmitting}
                     >

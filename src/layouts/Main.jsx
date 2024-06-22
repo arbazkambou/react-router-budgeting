@@ -1,3 +1,4 @@
+import { ChooseThemeMenu } from "@/components/ChooseThemeMenu";
 import { ConfirmDialog } from "@/components/ConfirmDialog";
 import { Button } from "@/components/ui/button";
 import { getData } from "@/helper";
@@ -17,20 +18,21 @@ function Main() {
         {userName && (
           <>
             <Link to={"/"} className=" flex justify-center">
-              <Home className=" size-10 text-violet-600" />
+              <Home className=" size-10 text-green-500" />
               &nbsp;{" "}
-              <span className="mt-2 text-lg font-bold text-violet-600">
+              <span className="mt-2 text-lg font-bold text-green-500">
                 HomeBudget
               </span>
             </Link>
+            <ChooseThemeMenu />
             <ConfirmDialog>
               {/* <Button className=" bg-red-600 hover:bg-red-400" type="submit">
                 Delete user
               </Button> */}
               <Link className=" flex justify-center">
-                <UserRoundX className=" size-10 text-red-600" />
+                <UserRoundX className=" size-10 text-red-500" />
                 &nbsp;{" "}
-                <span className="mt-2 text-lg font-bold text-red-600">
+                <span className="mt-2 text-lg font-bold text-red-500">
                   Delete User
                 </span>
               </Link>

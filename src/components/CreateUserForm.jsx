@@ -15,10 +15,10 @@ export function CreateUserForm() {
   const fetcher = useFetcher();
   const isSubmitting = fetcher.state === "submitting";
   return (
-    <Card className="w-[100%] shadow-none border-none">
+    <Card className="w-[100%] shadow-md py-10">
       <CardHeader>
         <CardTitle className=" font-bold text-3xl">
-          Take Control of <span className=" text-violet-600">Your Money</span>
+          Take Control of <span className=" text-green-500">Your Money</span>
         </CardTitle>
         <CardDescription className=" text-lg">
           Personal budgeting is the secret of financial freedom. <br />

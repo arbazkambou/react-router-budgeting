@@ -21,12 +21,12 @@ export function AddExpenseForm({ budgets }) {
     [isSubmitting]
   );
   return (
-    <Card className="w-[100%] mt-5 border-dotted border-2 hover:border-violet-600 shadow-md">
+    <Card className="w-[100%] mt-5 shadow-md">
       <CardHeader>
         <CardTitle className="text-lg">
           Add New{" "}
           {budgets?.length === 1 && (
-            <span className=" text-violet-700">{budgets[0].name}</span>
+            <span className=" text-green-500">{budgets[0].name}</span>
           )}{" "}
           Expense
         </CardTitle>

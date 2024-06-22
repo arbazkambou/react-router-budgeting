@@ -62,7 +62,7 @@ function Budget() {
   return (
     <div className="">
       <p className=" text-2xl font-semibold mt-8 mb-5 text-center">
-        <span className=" text-violet-600">{budget.name}</span> Overview
+        <span className=" text-green-500">{budget.name}</span> Overview
       </p>
 
       <BudgetItem budget={budget} showDeleteButton={true} />

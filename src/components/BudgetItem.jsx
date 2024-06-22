@@ -29,12 +29,7 @@ function BudgetItem({ budget, showDeleteButton = false }) {
         {showDeleteButton ? (
           <Form method="post" action="delete">
             <input type="hidden" name="budgetName" value={budget.name} />
-            <Button
-              variant="outline"
-              className="  hover:bg-red-100 hover:text-stone-600 text-sm font-normal bg-red-200 "
-            >
-              Delete Budget
-            </Button>
+            <Button variant="destructive">Delete Budget</Button>
           </Form>
         ) : (
           <Button>

@@ -19,9 +19,9 @@ export function CreateBudgetForm() {
     [isSubmitting]
   );
   return (
-    <Card className="w-[100%] mt-5 border-dotted border-2 hover:border-violet-600 shadow-md">
+    <Card className="w-[100%] mt-5 shadow-md">
       <CardHeader>
-        <CardTitle className="text-lg">Create Budget</CardTitle>
+        <CardTitle className="text-lg">Create New Budget</CardTitle>
       </CardHeader>
       <CardContent>
         <fetcher.Form method="post" ref={formRef}>
