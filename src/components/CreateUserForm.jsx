@@ -17,7 +17,7 @@ export function CreateUserForm() {
   return (
     <Card className="w-[100%] shadow-md py-10">
       <CardHeader>
-        <CardTitle className=" font-bold text-3xl">
+        <CardTitle className=" font-bold md:text-3xl text-2xl">
           Take Control of <span className=" text-green-500">Your Money</span>
         </CardTitle>
         <CardDescription className=" text-lg">

@@ -79,7 +79,7 @@ function Dashboard() {
 
   return userName ? (
     <div className=" mt-10">
-      <p className="dark text-3xl text-center font-semibold">
+      <p className="dark text-2xl sm:text-3xl text-center font-semibold">
         Welcome Back, <span className="text-green-500">{userName}</span>
       </p>
       <div className=" flex justify-center mt-2">

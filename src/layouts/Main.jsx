@@ -18,9 +18,9 @@ function Main() {
         {userName && (
           <>
             <Link to={"/"} className=" flex justify-center">
-              <Home className=" size-10 text-green-500" />
+              <Home className=" sm:size-10 size-8 text-green-500" />
               &nbsp;{" "}
-              <span className="mt-2 text-lg font-bold text-green-500">
+              <span className="mt-2 text-lg sm:font-bold font-semibold text-green-500">
                 HomeBudget
               </span>
             </Link>
@@ -30,9 +30,9 @@ function Main() {
                 Delete user
               </Button> */}
               <Link className=" flex justify-center">
-                <UserRoundX className=" size-10 text-red-500" />
+                <UserRoundX className=" sm:size-10 size-8 text-red-500" />
                 &nbsp;{" "}
-                <span className="mt-2 text-lg font-bold text-red-500">
+                <span className="mt-2 text-lg sm:font-bold font-semibold text-red-500">
                   Delete User
                 </span>
               </Link>
