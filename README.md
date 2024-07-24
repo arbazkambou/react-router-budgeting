@@ -2,7 +2,7 @@
 
 Budgeting with React Router is a React application that helps users manage their budgets effectively. The app allows users to add expenses, view summaries, and manage budget categories, all while navigating smoothly using React Router.
 
-[View Live Project](https://the-wild-oasis-rest.vercel.app/login)
+[View Live Project](https://react-router-budgeting-app.vercel.app/)
 
 ## Features
 
